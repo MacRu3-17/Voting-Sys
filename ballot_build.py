@@ -37,7 +37,7 @@ def del_entry():
 def save_ballot():
 	fileHandle = open('.ballot', 'w')
 	fileHandle.write(label2.value + "\n" + label4.value + "\n" + str(listbox1.items) + "\n" + label8.value + "\n" + str(listbox5.items) + "\n" + label5.value + "\n" + str(listbox2.items) + "\n" + label3.value + "\n" + label6.value + "\n" + str(listbox3.items) + "\n" + label9.value + "\n" + str(listbox6.items) + "\n" + label7.value + "\n" + str(listbox4.items) + "\n")
-	ballot = Window(app)
+	"""ballot = Window(app)
 	choices1 = ButtonGroup(ballot, options=[])
 	choices2 = ButtonGroup(ballot, options=[])
 	for item in listbox1.items[1:]:
@@ -57,9 +57,9 @@ def save_ballot():
 		choices2.append(str(name))
 	for item in listbox4.items[1:]:
 		name = item
-		choices2.append(str(name))
-	#fileHandle.close()
-	#app.destroy()
+		choices2.append(str(name)) """
+	fileHandle.close()
+	app.destroy()
 
 def close_app():
 	app.destroy()
